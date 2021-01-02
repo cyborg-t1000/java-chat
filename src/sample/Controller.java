@@ -13,9 +13,17 @@ public class Controller {
 
     @FXML
     public void clickSend(ActionEvent actionEvent) {
+        send();
+    }
+
+    @FXML
+    public void onEnter(ActionEvent actionEvent) {
+        send();
+    }
+
+    private void send() {
         textArea.appendText(textField.getText() + "\n");
         textField.clear();
         textField.requestFocus();
     }
-
 }

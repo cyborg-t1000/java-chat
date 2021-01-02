@@ -3,17 +3,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="sample.Controller">
+<BorderPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <center>
         <HBox>
-            <TextArea fx:id="textArea" editable="false" minWidth="500" HBox.hgrow="ALWAYS"/>
+            <TextArea fx:id="textArea" editable="false" minWidth="500" HBox.hgrow="ALWAYS" />
         </HBox>
     </center>
     <bottom>
         <HBox>
-            <TextField fx:id="textField" minWidth="500" promptText="Введите сообщение" HBox.hgrow="ALWAYS"/>
-            <Button minWidth="100" text="Send" onAction="#clickSend"/>
+            <TextField fx:id="textField" minWidth="500" onAction="#onEnter" promptText="Введите сообщение" HBox.hgrow="ALWAYS" />
+            <Button minWidth="100" onAction="#clickSend" text="Send" />
         </HBox>
     </bottom>
 </BorderPane>
