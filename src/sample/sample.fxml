@@ -13,7 +13,7 @@
     <bottom>
         <HBox>
             <TextField fx:id="textField" minWidth="500" promptText="Введите сообщение" HBox.hgrow="ALWAYS"/>
-            <Button minWidth="100" text="Send"/>
+            <Button minWidth="100" text="Send" onAction="#clickSend"/>
         </HBox>
     </bottom>
 </BorderPane>
